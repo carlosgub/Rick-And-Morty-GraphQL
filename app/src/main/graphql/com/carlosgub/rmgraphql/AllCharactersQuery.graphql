@@ -1,0 +1,17 @@
+query AllCharacters($page:Int =1){
+    characters(page:$page){
+        results {
+            id
+            name
+            species
+            status
+            image
+            origin {
+                name
+            }
+            location {
+                name
+            }
+        }
+    }
+}
